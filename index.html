@@ -10,13 +10,25 @@
 <body>
     <form>
         Name: <input type="text" id="name"><br>
-        
+        Email: <input type="email" id="email"><br>
+        Password: <input type="password" id="password"><br>
+        Age: <input type="number" id="age"><br>
+        Gender: <input type="radio" id="gender" value="Female">Female
+            <input type="radio" id="gender" value="Male">Male
+            <input type="radio" id="gender" value="Other">Other<br>
+        Country: <select id="country">
+            <option value="">--Select a country--</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+        </select><br><br>
+        I agree to the Terms and Conditions <input type="checkbox" id="agree"><br><br>
 
         <input type="button" value="Display Information" onclick="displayInformation(this.form);">
         <input type="button" value="Hide Information" onclick="hideInformation();"><br>
         <input type="button" value="Reset Form" onclick="resetForm(this.form);">
-
-        
 
     </form>
 
