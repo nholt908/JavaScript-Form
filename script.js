@@ -3,6 +3,7 @@ function displayInformation(form){
         alert("Please agree to the Terms and Conditions");
         return;
     }
+    document.getElementById("information").style.display = "block";
     document.getElementById("info").innerHTML = "Name: " + form.elements["name"].value + "<br>"
     + "Email: " + form.elements["email"].value + "<br>"
     + "Password: " + form.elements["password"].value + "<br>"
@@ -11,10 +12,7 @@ function displayInformation(form){
     + "Country: " + form.elements["country"].value;
 }
 
-function hideInformation(){
-    document.getElementById("info").innerHTML = "";
-}
-
 function resetForm(form){
     form.reset();
+    document.getElementById("information").style.display = "none";
 }

@@ -17,7 +17,7 @@
             <input type="radio" id="gender" value="Male">Male
             <input type="radio" id="gender" value="Other">Other<br>
         Country: <select id="country">
-            <option value="">--Select a country--</option>
+            <option value="">--Select a Country--</option>
             <option value="United States">United States</option>
             <option value="Canada">Canada</option>
             <option value="Mexico">Mexico</option>
@@ -26,13 +26,15 @@
         </select><br><br>
         I agree to the Terms and Conditions <input type="checkbox" id="agree"><br><br>
 
-        <input type="button" value="Display Information" onclick="displayInformation(this.form);">
-        <input type="button" value="Hide Information" onclick="hideInformation();"><br>
-        <input type="button" value="Reset Form" onclick="resetForm(this.form);">
+        <button id="submit" type="button" onclick="displayInformation(this.form);">Display Information</button>
+        <button id="clear" type="button" onclick="resetForm(this.form)">Reset Form</button>
 
     </form>
 
-    <p id="info"></p>
+    <div id="information">
+        <h3>Information input:</h3>
+        <p id="info">Name: <br> Email: <br> Password: <br> Age: <br> Gender: <br> Country:</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
